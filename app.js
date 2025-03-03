@@ -11,3 +11,9 @@ app.use(express.static('dist'))
 app.listen(PORT, () => {
   console.log(`server started on port ${PORT}`)
 })
+
+
+// eslint-disable-next-line no-unused-vars
+app.get('/health', (res, req) => {
+  res.send('ok')
+})
