@@ -11,6 +11,6 @@ jobs:
       - name: Trigger deployment
         uses: sws2apps/render-deployment@main #consider using pin for dependabot auto update
         with:
-          serviceId: ${{secret.RENDER_SERVICE_ID}}
-          apiKey: ${{secret.RENDER_API_KEY}}
+          serviceId: ${{secrets.RENDER_SERVICE_ID}}
+          apiKey: ${{secrets.RENDER_API_KEY}}
           multipleDeployment: false #optional, default true
