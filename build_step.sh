@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "Build script"
+echo 'Build script'
 
 # add the commands here
