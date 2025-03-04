@@ -24,8 +24,12 @@ jobs:
           run: npm run build
         - name: test
           run: npm test
+<<<<<<< HEAD
         - name: Bump version and push tag
           uses: anothrNick/github-tag-action@1.71.0
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+=======
+
+>>>>>>> eae72ebcb5b2b4d6cd53fc6fb60e35dd69a9b306
         
