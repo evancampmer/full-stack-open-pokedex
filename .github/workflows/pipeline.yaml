@@ -38,6 +38,7 @@ jobs:
           RELEASE_BRANCHES: main
           WITH_V: false
   discord_notif:
+    needs: [simple_deployment_pipeline]
     runs-on: ubuntu-20.04
     steps:
       - name: Test Success
