@@ -48,7 +48,7 @@ jobs:
     needs: [simple_deployment_pipeline]
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v
+      - uses: actions/checkout@v4
       - name: Test Success
         uses: tsickert/discord-webhook@v7.0.0
         if: ${{ success() }}
